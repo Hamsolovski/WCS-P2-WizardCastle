@@ -56,7 +56,7 @@ function Bestiary() {
           <h2>Choose a challenge rating </h2>
             <FilterList setChallengeRating={setChallengeRating} challengeRating={challengeRating}/>
           </section>
-          <section>
+          <section className="filter-options">
             <h2>Filter by monster type</h2>
             {/* J'appelle ma liste de types */}
             <section className="filter-list">

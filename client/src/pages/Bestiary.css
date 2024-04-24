@@ -10,6 +10,13 @@ main {
   gap: 5px;
 }
 
+.filter-options {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
 button {
   margin: 10px;
   padding: 10px 20px;
@@ -30,8 +37,10 @@ button:hover {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
     grid-template-rows: repeat(4, 1fr);
+    justify-content: center;
+    align-items: center;
     width: 300px;
     gap: 5px;
-    margin: 5vw;
+    margin: 0 5vw;
   }
 }
