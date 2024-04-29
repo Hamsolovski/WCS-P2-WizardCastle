@@ -1,5 +1,5 @@
 import { Link } from "react-router-dom";
-
+import wizardLogo from '/wizard_logo_white.svg'
 import "./home.css";
 
 function Home() {
@@ -9,7 +9,7 @@ function Home() {
         <div>
           <img
             className="imageCenter"
-            src="../assets/wizard_logo_white.svg"
+            src={wizardLogo}
             alt=""
           />
         </div>
