@@ -28,37 +28,20 @@ function Bestiary() {
     "plant",
     "undead",
   ];
-  const allChallengeRating = [
-    "1",
-    "2",
-    "3",
-    "4",
-    "5",
-    "6",
-    "7",
-    "8",
-    "9",
-    "10",
-    "11",
-    "12",
-    "13",
-    "14",
-    "15",
-    "16",
-    "17",
-    "18",
-    "19",
-    "20",
-  ];
 
-  const [challengeRating, setChallengeRating] = useState(allChallengeRating);
+  const [challengeRating, setChallengeRating] = useState("all");
   const [monsterInfo, setMonsterInfo] = useState([]);
   const [monsterIndex, setMonsterIndex] = useState(null);
   const [monsterList, setMonsterList] = useState(results);
   const [searchInput, setSearchInput] = useState("");
+
   const filterMonsterName = monsterList.filter((item) =>
     item.name.toLowerCase().startsWith(searchInput)
   );
+
+  const filterMonsterByCR = filterMonsterName.filter((item) =>
+  challengeRating === item.challenge_rating
+  )
 
   useEffect(() => {
     fetch(`https://www.dnd5eapi.co/api/monsters/${monsterIndex}`)
@@ -88,7 +71,7 @@ function Bestiary() {
           type="button"
           onClick={() => {
             setMonsterList(results);
-            setChallengeRating(allChallengeRating);
+            setChallengeRating("all");
             setMonsterIndex(null);
           }}
         >
@@ -137,18 +120,24 @@ function Bestiary() {
           ) : null}
           {monsterList ? (
             <section className="list-results">
-              {filterMonsterName
-                .filter((item) =>
-                  challengeRating.includes(item.challenge_rating)
-                )
-                .map((item) => (
+              {challengeRating !== "all" ? 
+                filterMonsterByCR.map((item) => (
+                    <ListItemRound
+                      key={item.slug}
+                      itemName={item.name}
+                      setState={setMonsterIndex}
+                      itemInfo={item.slug}
+                    />
+                )) :
+                filterMonsterName.map((item) => (
                   <ListItemRound
                     key={item.slug}
                     itemName={item.name}
                     setState={setMonsterIndex}
                     itemInfo={item.slug}
                   />
-                ))}
+              ))
+                }
             </section>
           ) : null}
         </section>
