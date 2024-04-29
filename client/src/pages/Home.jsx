@@ -9,7 +9,7 @@ function Home() {
         <div>
           <img
             className="imageCenter"
-            src="/src/assets/Wizard Castle.svg"
+            src="./src/assets/Wizard Castle.svg"
             alt=""
           />
         </div>
