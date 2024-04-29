@@ -1,5 +1,5 @@
 import { Link } from "react-router-dom";
-import wizardLogo from '/wizard_logo_white.svg'
+import wizardLogo from '../assets/wizard_logo_white.svg'
 import "./home.css";
 
 function Home() {
