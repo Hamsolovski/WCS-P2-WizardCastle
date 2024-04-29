@@ -9,7 +9,7 @@ function Home() {
         <div>
           <img
             className="imageCenter"
-            src="../assets/images/BattleField.jpg"
+            src="/src/assets/images/BattleField.jpg"
             alt=""
           />
         </div>
