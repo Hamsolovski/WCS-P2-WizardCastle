@@ -31,6 +31,8 @@
 
 .h1Button {
   color: white !important;
+  font-family: var(--title-font) !important;
+  font-size: 2em;
 }
 
 #container2 h1,
@@ -106,8 +108,9 @@
   background-position: 60%, 60%;
 }
 .navItemClass {
-  background-image: url("/src/assets/images/Classes.png");
+  background-image: url("https://miro.medium.com/v2/resize:fit:1400/0*RUSGLIjpQVY7kt4Y.jpg");
   background-size: cover;
+  background-position: 100%, 80%;
 }
 
 .navItemSpells {
@@ -125,12 +128,14 @@
   filter: drop-shadow(rgb(33, 6, 6) 1px 0 10px) !important;
 }
 
-.navItemBestiary h1,
-.navItemRules h1,
-.navItemClass h1,
-.navItemSpells h1 {
+.navItemBestiary h3,
+.navItemRules h3,
+.navItemClass h3,
+.navItemSpells h3 {
   justify-self: flex-end !important;
   color: white !important;
+  font-family: var(--title-font) !important;
+  font-size: 1.2em;
 }
 
 @media (max-width: 900px) {
@@ -174,7 +179,7 @@
   }
 
   .navItemClass {
-    background-position: 10%, 80%;
+    background-position: 90%, 80%;
   }
 
   .navItemBestiary:hover,

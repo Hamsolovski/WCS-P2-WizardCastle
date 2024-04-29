@@ -9,6 +9,12 @@
   border: 1px solid rgb(156, 156, 156);
   padding: 1em;
   gap: 5px;
+  transition: all 0.3s ease-in-out;
+}
+
+.global-search-container:hover{
+  background-color: #ffa84d;
+  scale: 1.1;
 }
 
 .global-search {
