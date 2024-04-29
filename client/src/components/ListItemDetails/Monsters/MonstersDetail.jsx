@@ -1,10 +1,41 @@
 import PropTypes from 'prop-types';
 import "./MonstersDetail.css";
+import aberration from '../../../assets/icons/monsters/aberration-icon.svg'
+import beast from '../../../assets/icons/monsters/beast-icon.svg'
+import celestial from '../../../assets/icons/monsters/celestial-icon.svg'
+import construct from '../../../assets/icons/monsters/construct-icon.svg'
+import dragon from '../../../assets/icons/monsters/dragon-icon.svg'
+import elemental from '../../../assets/icons/monsters/elemental-icon.svg'
+import fey from '../../../assets/icons/monsters/fey-icon.svg'
+import fiend from '../../../assets/icons/monsters/fiend-icon.svg'
+import giant from '../../../assets/icons/monsters/giant-icon.svg'
+import humanoid from '../../../assets/icons/monsters/humanoid-icon.svg'
+import monstrosity from '../../../assets/icons/monsters/monstrosity-icon.svg'
+import ooze from '../../../assets/icons/monsters/ooze-icon.svg'
+import plant from '../../../assets/icons/monsters/plant-icon.svg'
+import undead from '../../../assets/icons/monsters/undead-icon.svg'
+
+const monsters = {
+    aberration,
+    beast,
+    celestial,
+    construct,
+    dragon,
+    elemental,
+    fey,
+    fiend,
+    giant,
+    humanoid,
+    monstrosity,
+    ooze,
+    plant,
+    undead
+}
 
 function MonstersDetail({item}) {
     return(
         <section className="monster-detail">
-            <img src={`/src/assets/icons/monsters/${item.type.toLowerCase()}-icon.svg`} alt=""/>
+            <img src={monsters[item.type.toLowerCase()]} alt=""/>
             <section className="monster-info">
             {item.desc ? <p className="item-desc">{item.desc}</p> : <p className="item-desc">Our adventurers didn't survive long enough to see this monster...<br/> We're not sure what it looks like, sorry !</p>}
             </section>
