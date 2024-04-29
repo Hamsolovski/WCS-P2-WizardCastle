@@ -10,9 +10,8 @@
   flex-direction: column;
   align-items: center;
   background-color: antiquewhite;
-  height: 400px;
   width: 80%;
-  padding: 10px;
+  padding: 40px;
   justify-content: center;
   gap: 30px;
   margin: 40px 10px;
@@ -23,11 +22,10 @@
   flex-direction: column;
   align-items: center;
   background-color: antiquewhite;
-  height: 600px;
+  padding: 40px;
   width: 80%;
   justify-content: center;
   gap: 30px;
-  overflow-x: hidden;
   margin: 40px 10px;
 }
 
@@ -38,6 +36,7 @@
 #container2 h1,
 #container1 h1 {
   color: #772e25;
+  text-align: center;
 }
 #container2,
 #container1 p {
@@ -79,12 +78,18 @@
   align-items: center;
   justify-content: center;
 }
+
+.listOption {
+  justify-content: center;
+  row-gap: 10px;
+}
+
 .navItemBestiary,
 .navItemRules,
 .navItemClass,
 .navItemSpells {
-  height: 350px;
-  width: 250px;
+  height: 250px;
+  width: 200px;
   display: flex;
   justify-content: space-around;
   align-items: flex-end;
@@ -179,17 +184,10 @@
     filter: grayscale(80%);
     transform: scale(1.01);
   }
-  #container2 {
-    height: 700px;
-  }
 
   #container2 p,
   #container1 p {
     max-width: 30ch;
-  }
-  .listOption {
-    justify-content: center;
-    row-gap: 10px;
   }
 }
 

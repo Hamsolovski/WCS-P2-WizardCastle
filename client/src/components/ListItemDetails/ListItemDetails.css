@@ -23,3 +23,12 @@
   text-align: center;
   margin: 0 0 0.5em 0;
 }
+
+.classes-proficiencies {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  gap: 10px;
+}

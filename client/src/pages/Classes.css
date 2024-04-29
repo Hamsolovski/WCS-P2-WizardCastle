@@ -8,7 +8,7 @@
   display: flex;
   width: 65vw;
   margin: 1px;
-  gap: 45px;
+  gap: 20px;
   flex-wrap: wrap;
   justify-content: center;
   padding: 30px;
@@ -21,12 +21,11 @@
 
 .classes-box {
   display: flex;
-  width: 240px;
-  height: 191px;
+  padding : 20px;
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  border: 2px solid black;
+  border: 2px solid var(--warm-second);
   font-size: 32px;
   font-family: var(--title-font);
 }
@@ -38,11 +37,15 @@
   text-align: center;
 }
 
-@media only screen and (min-width: 200px) and (max-width: 768px) {
+@media only screen and (max-width: 768px) {
   .main-classes {
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
+  }
+
+  .classes-box {
+    font-size: 24px;
   }
 }

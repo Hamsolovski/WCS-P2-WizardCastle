@@ -20,12 +20,11 @@ function Home() {
           <img src="" alt="" />
           <h1>Welcome to Wizard’s Castle, dear adventurer</h1>
           <p className="intro-text">
-            We provide all kind of resources to help you play Dungeons & Dragons
-            !
+          Welcome to the Wizard's Library, the definitive repository of knowledge for all aspiring adventurers in the realms of Dungeons & Dragons. Within these hallowed halls, you will find a wealth of arcane wisdom and mystical lore, carefully curated to guide you on your journey through the boundless tapestry of the D&D universe.
           </p>
           <div className="button">
             <Link to="/rules">
-              <h1 className="h1Button">rules</h1>
+              <h1 className="h1Button">Check the rules</h1>
             </Link>
           </div>
         </div>
@@ -53,7 +52,7 @@ function Home() {
             <li>
               <Link to="/classes">
                 <div className="navItemClass">
-                  <h1>Class</h1>
+                  <h1>Classes</h1>
                 </div>
               </Link>
             </li>

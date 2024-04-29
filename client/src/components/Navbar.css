@@ -10,6 +10,7 @@ nav {
   padding: 0 20px 0 0;
   align-items: center;
   gap: 50px;
+  border-bottom: 1px solid white;
   z-index: 20;
 }
 nav ul {
@@ -45,7 +46,14 @@ nav li:hover {
     gap: 10px;
   }
 
-  nav li a {
-    font-size: 0.8em;
+  nav ul {
+    gap: 10px;
+    margin-left: 10px;
   }
+
+  nav li a {
+    font-size: 0.7em;
+  }
+
+
 }

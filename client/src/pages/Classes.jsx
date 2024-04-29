@@ -8,7 +8,6 @@ import SectionHeaderClasses from "../components/SectionHeader/SectionHeaderClass
 function Classes() {
   const result = useLoaderData();
 
-  console.info(result);
   const [currentClass, setCurrentClass] = useState(null);
   const [classesInfo, setClassesInfo] = useState([]);
   const [classList, setClassList] = useState([]);
@@ -44,7 +43,7 @@ function Classes() {
     <>
       <SectionHeaderClasses />
       <main className="main-bestiary">
-        <h2>WHAT IS A CLASS ?</h2>
+        <h2>WHAT IS AN ADVENTURER ?</h2>
         <div>
           <p className="intro-text">
             Adventurers are extraordinary people, driven by a thirst for
@@ -57,8 +56,8 @@ function Classes() {
             more than a profession; it’s your character’s calling.
           </p>
           <section className="class-results">
+            {currentRace ? <ListItemDetails item={racesInfo} /> : null} 
             {currentClass ? <ListItemDetails item={classesInfo} /> : null}
-            {currentRace ? <ListItemDetails item={racesInfo} /> : null}
           </section>
         </div>
         <h2>CHOOSE A RACE</h2>

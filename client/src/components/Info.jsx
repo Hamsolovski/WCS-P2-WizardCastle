@@ -21,7 +21,6 @@ Info.propTypes = {
   worker: PropTypes.shape({
     name: PropTypes.string.isRequired,
     linktogithub: PropTypes.string.isRequired,
-    linktox: PropTypes.string.isRequired,
     linktolinkedin: PropTypes.string.isRequired,
   }).isRequired,
 };

@@ -1,8 +1,13 @@
 function classesDetail({ item }) {
   return (
-    <section>
+    <section className="monster-detail">
       <p>Hit die: {item.hit_die}</p>
-      <p>Skills: {item.proficiency_choices[0].desc}</p>
+      <section className="monster-detail">
+        <p>Skills:</p>
+        <p className="classes-proficiencies">{item.proficiency_choices.map((choice) => (<p key={choice.desc}>{choice.desc}</p>))}</p>
+        <p>Proficiencies: </p>
+        <p className="classes-proficiencies">{item.proficiencies.map((choice) => (<p key={choice.name}>{choice.name}</p>))}</p>
+      </section>
     </section>
   );
 }
