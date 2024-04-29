@@ -9,7 +9,7 @@ function Home() {
         <div>
           <img
             className="imageCenter"
-            src="https://images.ctfassets.net/hrltx12pl8hq/28ECAQiPJZ78hxatLTa7Ts/2f695d869736ae3b0de3e56ceaca3958/free-nature-images.jpg"
+            src="WCS-P2-WizardCastle/5fbed9e64176f9b3b63bc6e02bb49f741967d847/client/src/assets/Wizard Castle.svg"
             alt=""
           />
         </div>
