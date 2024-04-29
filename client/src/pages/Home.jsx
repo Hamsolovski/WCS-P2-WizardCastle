@@ -9,7 +9,7 @@ function Home() {
         <div>
           <img
             className="imageCenter"
-            src="WCS-P2-WizardCastle/5fbed9e64176f9b3b63bc6e02bb49f741967d847/client/src/assets/Wizard Castle.svg"
+            src="../assets/wizard_logo_white.svg"
             alt=""
           />
         </div>
