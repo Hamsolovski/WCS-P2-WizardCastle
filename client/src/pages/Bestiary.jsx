@@ -85,7 +85,7 @@ function Bestiary() {
               challengeRating={challengeRating}
             />
           </section>
-          <section>
+          <section className="main-classes">
             <h2>Filter by monster type</h2>
             {/* J'appelle ma liste de types */}
             <section className="filter-list">

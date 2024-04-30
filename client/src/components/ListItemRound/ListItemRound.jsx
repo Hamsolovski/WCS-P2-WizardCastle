@@ -3,7 +3,7 @@ import PropTypes from 'prop-types'
 
 function ListItemRound({ itemName, setState, itemInfo }) {
     return (
-        <button type="button" className="ListItemRound" onClick={() => setState(itemInfo)}><a href="#list-item-details">{itemName}</a></button>
+        <a href="#list-item-details"><button type="button" className="ListItemRound" onClick={() => setState(itemInfo)}>{itemName}</button></a>
     )
 }
 
